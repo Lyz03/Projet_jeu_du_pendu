@@ -15,3 +15,7 @@ header {
 .images img {
     width: 100%;
 }
+
+#reset {
+    display: none;
+}
