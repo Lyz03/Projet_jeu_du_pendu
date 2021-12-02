@@ -7,3 +7,11 @@ header {
     color: #797979;
     margin-bottom: 2rem;
 }
+
+.images {
+    width: 50%;
+}
+
+.images img {
+    width: 100%;
+}

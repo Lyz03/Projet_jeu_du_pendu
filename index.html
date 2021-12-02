@@ -10,15 +10,18 @@
 
   <header>
       <h1>Le jeu du pendu</h1>
-      <span>Entrez une lettre en minuscule</span>
+      <span>Entrez une lettre en minuscule, sans accent</span>
+      <p id="winLose"></p>
   </header>
 
   <section>
-    <div id="image">
-
+    <div class="images">
+        <img src="/images/one.jpg" alt="pendu">
     </div>
 
     <div>
+        <p>Chances restantes : <span id="remaining_chances"></span></p>
+        <div id="buttons"></div>
         <span id="user_guesses"></span>
         <label for="letter"> Entrez une lettre : </label>
         <input id="letter" type="text">
