@@ -41,7 +41,21 @@ let goodLetterGuessed = 0;
 let alreadyWrite = [];
 let remainingChances = 6
 
-remainingChancesP.innerText = remainingChances.toString();
+document.getElementById('easy').addEventListener('click', function () {
+    remainingChances = 8;
+    remainingChancesP.innerText = remainingChances.toString();
+})
+
+document.getElementById('normal').addEventListener('click', function () {
+    remainingChances = 6;
+    remainingChancesP.innerText = remainingChances.toString();
+})
+
+document.getElementById('hard').addEventListener('click', function () {
+    remainingChances = 4;
+    remainingChancesP.innerText = remainingChances.toString();
+})
+
 
 // creat buttons
 function createButtons() {
@@ -58,7 +72,7 @@ createButtons();
  */
 User.submit.addEventListener("click", function () {
     if (remainingChances === 0) {
-        winLoseP.innerText = "Perdu ! le mot été : " +searchWord.join('');
+        winLoseP.innerText = "Perdu ! Le mot été : " +searchWord.join('');
         resetButton.style.display = 'block'
         resetButton.addEventListener("click", function () {
             resetGame()

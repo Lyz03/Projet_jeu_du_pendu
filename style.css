@@ -1,21 +1,65 @@
 body {
     font-family: sans-serif;
+    color: gray;
 }
 
 header {
     text-align: center;
-    color: #797979;
     margin-bottom: 2rem;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .images {
-    width: 50%;
+    width: 30rem;
 }
 
 .images img {
     width: 100%;
 }
 
+div#buttons {
+    margin-bottom: 1.8rem;
+}
+
+button, input[type="submit"] {
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+div#buttons button {
+    background-color: #c9cae5;
+}
+
+#easy {
+    background-color: #aecece;
+}
+
+#normal {
+    background-color: #9ab1d5;
+}
+
+#hard {
+    background-color: #d3a19d;
+}
+
+input[type="submit"] {
+    background-color: #ddcbe5;
+}
+
 #reset {
     display: none;
+    background-color: #b8d3de;
+}
+
+@media screen and (max-width: 400px) {
+    .images {
+        width: 50rem;
+    }
 }
